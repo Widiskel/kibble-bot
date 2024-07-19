@@ -4,7 +4,7 @@ Kibble game on ton Bot
 
 ## BOT FEATURE
 
-- Auto complete missions
+<!-- - Auto complete missions (REMOVED) -->
 - Auto claim daily bonus
 - Auto tap
 

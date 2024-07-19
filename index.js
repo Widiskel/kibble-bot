@@ -21,12 +21,12 @@ async function operation(user) {
   console.log(`-> Claiming Daily bonus`);
   await kibble.claimDailyBonus();
 
-  for (const task of kibble.uncompletedTaskList) {
-    console.log();
-    console.log(`-> Completing task ${task.task.name}`);
-    await kibble.missionQuest(task);
-  }
-  console.log(`-> All task Completed`);
+  // for (const task of kibble.uncompletedTaskList) {
+  //   console.log();
+  //   console.log(`-> Completing task ${task.task.name}`);
+  //   await kibble.missionQuest(task);
+  // }
+  // console.log(`-> All task Completed`);
 
   if (kibble.statistic.energy > 100) {
     console.log();
@@ -114,6 +114,7 @@ async function startBot() {
 
 (async () => {
   try {
+    logger.clear();
     logger.info("");
     logger.info("Application Started");
     console.log("KIBBLE BOT");
